@@ -1,0 +1,90 @@
+/* 基本的なリセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* フォント */
+    background-color: #f7f7f7; /* 背景色 */
+    color: #333; /* 文字色 */
+    line-height: 1.6; /* 行の高さ */
+    padding: 20px; /* ページ全体のパディング */
+}
+
+header {
+    background-color: #003366; /* ヘッダーの背景色をダークネイビーに変更 */
+    color: white; /* ヘッダーの文字色を白に */
+    padding: 15px; /* ヘッダーのパディング */
+    text-align: center; /* 中央揃え */
+    margin-bottom: 20px; /* ヘッダーとコンテンツの間のマージン */
+}
+
+footer {
+    /* フッターの装飾を削除 */
+    text-align: center; /* 中央揃え */
+    padding: 10px; /* フッターのパディング */
+    margin-top: 20px; /* コンテンツとの間のマージン */
+}
+
+section {
+    background-color: white; /* セクションの背景色 */
+    padding: 20px; /* セクションのパディング */
+    border-radius: 5px; /* 角を丸く */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 影を追加 */
+}
+
+.form-group {
+    margin-bottom: 20px; /* 各項目の下にマージンを増やす */
+}
+
+label {
+    display: block; /* ラベルをブロック要素に */
+    margin-bottom: 5px; /* ラベルとフィールドの間のマージン */
+    font-weight: bold; /* ラベルを太字に */
+}
+
+.form-control {
+    width: 100%; /* 幅を100% */
+    padding: 12px; /* パディングを増やす */
+    border: 1px solid #ccc; /* 枠線 */
+    border-radius: 4px; /* 角を丸く */
+    font-size: 16px; /* フォントサイズ */
+    transition: border-color 0.3s; /* 枠線の色の変化をスムーズに */
+}
+
+.form-control:focus {
+    border-color: #003366; /* フォーカス時の枠線の色 */
+    outline: none; /* デフォルトのアウトラインを削除 */
+}
+
+.submit-button {
+    background-color: #003366; /* ボタンの背景色 */
+    color: white; /* ボタンの文字色 */
+    border: none; /* 枠線なし */
+    padding: 10px 15px; /* パディング */
+    border-radius: 4px; /* 角を丸く */
+    cursor: pointer; /* カーソルをポインターに */
+    font-size: 16px; /* フォントサイズ */
+    transition: background-color 0.3s; /* 背景色の変化をスムーズに */
+}
+
+.submit-button:hover {
+    background-color: #003366; /* ホバー時の色 */
+}
+
+textarea {
+    width: 100%; /* 幅を100% */
+    padding: 12px; /* パディングを増やす */
+    border: 1px solid #ccc; /* 枠線 */
+    border-radius: 4px; /* 角を丸く */
+    font-size: 16px; /* フォントサイズ */
+    resize: vertical; /* 縦にリサイズ可能 */
+    transition: border-color 0.3s; /* 枠線の色の変化をスムーズに */
+}
+
+textarea:focus {
+    border-color: #003366; /* フォーカス時の枠線の色 */
+    outline: none; /* デフォルトのアウトラインを削除 */
+}

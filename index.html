@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>sampleAppLogin</title>
+    <link rel="stylesheet" href="styles.css"> <!-- 外部スタイルシートのリンク -->
+    <script src="script.js" defer></script> <!-- JavaScriptファイルのリンク -->
+</head>
+<body>
+    <header>
+        <h1>窓口対応記録システム</h1>
+    </header>
+    <main>
+        <section>
+            <form onsubmit="validateForm(event)">
+                <div class="form-group">
+                    <label for="user-id">ユーザーID</label>
+                    <input id="user-id" class="form-control" type="text" placeholder="ユーザーIDを入力">
+                </div>
+                <div class="form-group">
+                    <label for="password">パスワード</label>
+                    <input id="password" class="form-control" type="password" placeholder="パスワードを入力">
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="ログイン" class="submit-button" id="loginButton">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

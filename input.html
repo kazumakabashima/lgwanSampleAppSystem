@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sampleAppInput</title>
+    <link rel="stylesheet" href="styles.css"> <!-- 外部スタイルシートのリンク -->
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>窓口対応記録システム</h1>
+    </header>
+    <main>
+        <section>
+            <form>
+                <div class="form-group">
+                    <label for="input-date">入力日時</label>
+                    <input type="date" id="input-date" class="form-control"  placeholder="年/月/日">
+                </div>
+                <div class="form-group">
+                    <label for="name">氏名</label>
+                    <input type="text" id="name" class="form-control" placeholder="例: 山田太郎">
+                </div>
+                <div class="form-group">
+                    <label for="birth-date">生年月日</label>
+                    <input type="date" id="birth-date" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>性別</label>
+                    <div>
+                        <label for="gender-male"><input type="radio" id="gender-male" name="gender" value="male"> 男性</label>
+                        <label for="gender-female"><input type="radio" id="gender-female" name="gender" value="female"> 女性</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="postal-code">郵便番号</label>
+                    <input type="text" id="postal-code" class="form-control" placeholder="例: 123-4567">
+                </div>
+                <div class="form-group">
+                    <label for="address">住所</label>
+                    <input type="text" id="address" class="form-control" placeholder="例: 東京都新宿区">
+                </div>
+                <div class="form-group">
+                    <label for="phone">電話番号</label>
+                    <input type="text" id="phone" class="form-control" placeholder="例: 090-1234-5678">
+                </div>
+                <div class="form-group">
+                    <label for="email">メールアドレス</label>
+                    <input type="email" id="email" class="form-control" placeholder="例: example@mail.com">
+                </div>
+                <div class="form-group">
+                    <label for="my-number">マイナンバー</label>
+                    <input type="text" id="my-number" class="form-control" placeholder="例: 1234-5678-9012">
+                </div>
+                <div class="form-group">
+                    <label for="pension-number">年金番号</label>
+                    <input type="text" id="pension-number" class="form-control" placeholder="例: 1234567890">
+                </div>
+                <div class="form-group">
+                    <label for="care-insurance">介護保険番号</label>
+                    <input type="text" id="care-insurance" class="form-control" placeholder="例: 0987654321">
+                </div>
+                <div class="form-group">
+                    <label for="consultation-type">相談種別</label>
+                    <select id="consultation-type" class="form-control">
+                        <option value="pension">年金</option>
+                        <option value="insurance">介護保険</option>
+                        <option value="other">その他</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="consultation-content">相談内容</label>
+                    <textarea id="consultation-content" class="form-control" placeholder="例: 年金の受給について" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="handler">対応者</label>
+                    <input type="text" id="handler" class="form-control" placeholder="例: 田中係長">
+                </div>
+                <div class="form-group">
+                    <label for="staff-number">職員番号</label>
+                    <input type="text" id="staff-number" class="form-control" placeholder="例: 12345">
+                </div>
+                <div class="form-group">
+                    <label for="remarks">備考</label>
+                    <textarea id="remarks" class="form-control" placeholder="追加の情報があれば記入してください" rows="4"></textarea>
+                </div>
+                <!-- 送信ボタンの配置 -->
+                <div class="form-group">
+                    <input type="submit" value="登録" class="submit-button">
+                </div>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
